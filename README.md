@@ -19,7 +19,7 @@ The following walkthrough uses the Postman collection [here](https://github.com/
 
 The necessary tools for the following steps are:
  - Postman (or similar)
- - Docker for local instance of CQF Ruler (alternatively: public HAPI FHIR Server at http://hapi.fhir.org/baseR4)
+ - Docker for local instance of CQF Ruler (alternatively: public [HAPI FHIR Server](http://hapi.fhir.org/baseR4))
 
 
 ## Steps
@@ -30,11 +30,12 @@ The necessary tools for the following steps are:
     docker pull alphora/cqf-ruler
     docker run -p 8080:8080 alphora/cqf-ruler
     ```
-	or follow the guide here: https://github.com/cqframework/cqf-ruler/wiki/Deployment
+	or follow the guide [here](https://github.com/cqframework/cqf-ruler/wiki/Deployment)
  3. GET metadata to check server requirements
  4. POST test resources to the FHIR server
  5. POST ClinicalTrials Base Library, FHIRHelpers Library, the example trial Library, and Plandefinition  (In real system: Identify criteria and enter via UI)
  6. Check cds-hooks endpoint for active cds-services
+
  **Result:**
  ```
  {
@@ -50,13 +51,14 @@ The necessary tools for the following steps are:
 }
  ```
  7. Trigger cds-hook for different patients
+    
 	 **Result for patient who does not qualify (Patient 1&3)**
 	 ```
 	 {
 	    "cards": []
     }
 	 ```
-	 **Result for patient who qualifies (Patient 2) **
+	 **Result for patient who qualifies (Patient 2)**
 	 ```
 	 {
 	    "cards": [
@@ -77,6 +79,7 @@ The necessary tools for the following steps are:
 
  9. PUT Measure
  10. GET \$evaluate-measure operation: The parameter reportType is set to subject-list to get a list of ids of the eligible patients
+     
  **Result:**
  ```
  {
