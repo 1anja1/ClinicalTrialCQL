@@ -1,6 +1,6 @@
 # Clinical Trial Cohort Definition and Evaluation with CQL and CDS-Hooks
 
-This repository contains a postman collection and simplified walkthrough of an automated clinical trial patient selection architecture as described [here](TODO.once.published). The following diagram [(originally published here)](TODO.once.published) gives an overview of the proposed architecture:
+This repository contains a postman collection and simplified walkthrough of an automated clinical trial patient selection architecture as described [here](https://pubmed.ncbi.nlm.nih.gov/38682521/). The following diagram [(originally published here)](https://pubmed.ncbi.nlm.nih.gov/38682521/) gives an overview of the proposed architecture:
 ![Resource Overview Image Reviewed](https://github.com/1anja1/ClinicalTrialCQL/assets/109726549/baddf899-0a7c-48aa-b040-383ad52819ad)
 
 
