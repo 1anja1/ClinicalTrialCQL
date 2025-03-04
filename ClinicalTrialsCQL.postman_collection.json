@@ -346,12 +346,12 @@
 	"variable": [
 		{
 			"key": "cds-hooks-endpoint",
-			"value": "http://localhost:8080/cds-services",
+			"value": "http://cql-sandbox.projekte.fh-hagenberg.at:8080/cds-services",
 			"type": "string"
 		},
 		{
 			"key": "fhir-server-base",
-			"value": "http://localhost:8080/fhir",
+			"value": "http://cql-sandbox.projekte.fh-hagenberg.at:8080/fhir",
 			"type": "string"
 		}
 	]
